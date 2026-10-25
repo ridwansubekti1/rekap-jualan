@@ -68,9 +68,12 @@ export default function Header() {
     <header className="bg-white border-b border-slate-200 sticky top-0 z-30">
       <div className="max-w-4xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-2">
         <div className="flex items-center gap-2.5">
-          <div className="w-10 h-10 rounded-xl bg-emerald-600 flex items-center justify-center text-white font-extrabold text-xl shadow-sm">
-            R
-          </div>
+          {/* Logo Baru dari public/icon.svg */}
+          <img
+            src="/icon.svg"
+            alt="Logo Rekap Jualan"
+            className="w-10 h-10 rounded-xl shadow-sm object-cover"
+          />
           <div>
             <h1 className="font-extrabold text-lg leading-tight text-slate-900">Rekap Jualan</h1>
             <p className="text-xs text-slate-500">{formatTanggalIndo(todayStr)} • WIB</p>

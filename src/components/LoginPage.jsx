@@ -37,9 +37,12 @@ export default function LoginPage() {
     <div className="min-h-screen bg-slate-50 flex items-center justify-center p-4">
       <div className="bg-white max-w-md w-full rounded-3xl border border-slate-200 shadow-lg p-6 sm:p-8 space-y-6">
         <div className="text-center space-y-2">
-          <div className="w-14 h-14 rounded-2xl bg-emerald-600 text-white font-extrabold text-2xl flex items-center justify-center mx-auto shadow-md shadow-emerald-600/20">
-            R
-          </div>
+          {/* Logo Baru dari public/icon.svg */}
+          <img
+            src="/icon.svg"
+            alt="Logo Rekap Jualan"
+            className="w-16 h-16 rounded-2xl mx-auto shadow-md shadow-emerald-600/20 object-cover"
+          />
           <h1 className="text-xl font-extrabold text-slate-900">Admin Rekap Jualan</h1>
           <p className="text-xs text-slate-500">
             {isRegister
